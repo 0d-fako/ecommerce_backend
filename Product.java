@@ -17,7 +17,7 @@ public class Product {
         this.productID = productID;
         this.productImage = productImage;
         this.productStatus = productStatus;
-        
+
     }
     public String getProductName() {
         return productName;
