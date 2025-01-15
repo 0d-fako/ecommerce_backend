@@ -10,12 +10,13 @@ public class Order {
     private Date orderDate;
 
 
-    public Order(int orderID, int customerID, ArrayList<Product> productsID, int quantity, double price) {
+    public Order(int orderID, int customerID, ArrayList<Product> productsID, int quantity, double price, Date orderDate) {
         this.orderID = orderID;
         this.customerID = customerID;
         this.productsID = productsID;
         this.quantity = quantity;
         this.price = price;
+        this.orderDate = orderDate;
     }
 
     public int getOrderID() {
@@ -42,12 +43,12 @@ public class Order {
         this.quantity = quantity;
     }
 
-    public int getProductsID() {
+    public ArrayList<Product> getProductsID() {
         return productsID;
     }
 
     public void setProductsID( ArrayList<Product> productsID) {
-        this.productsID = productID;
+        this.productsID = productsID;
     }
 
     public int getCustomerID() {
@@ -56,5 +57,13 @@ public class Order {
 
     public void setCustomerID(int customerID) {
         this.customerID = customerID;
+    }
+
+    public Date getOrderDate() {
+        return orderDate;
+    }
+
+    public void setOrderDate(Date orderDate) {
+        this.orderDate = orderDate;
     }
 }
