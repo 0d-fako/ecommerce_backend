@@ -2,14 +2,14 @@ import java.util.ArrayList;
 
 public class Cart {
     private Customer customer;
-    private ArrayList<Product> products;
+    private ArrayList<Order> orders;
     private int quantity;
     private double total;
 
 
-    public Cart(Customer customer, ArrayList<Product> products, int quantity, double total) {
+    public Cart(Customer customer, ArrayList<Order> orders, int quantity, double total) {
         this.customer = customer;
-        this.products = products;
+        this.orders = orders;
         this.quantity = quantity;
         this.total = total;
 
@@ -23,12 +23,12 @@ public class Cart {
         this.customer = customer;
     }
 
-    public ArrayList<Product> getProducts() {
-        return products;
+    public ArrayList<Order> getOrders() {
+        return orders;
     }
 
-    public void setProducts(ArrayList<Product> products) {
-        this.products = products;
+    public void setOrders (ArrayList<Order> orders) {
+        this.orders = orders;
     }
 
     public int getQuantity() {
